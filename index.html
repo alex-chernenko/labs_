@@ -1,8 +1,7 @@
-{% load bootstrap_tags %}
-{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <!-- {% static "style.css" %} -->
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="kC1JnBO0IpfKd6Q_267Gy7Rh9QhtMx45uk-ViHBEKQY" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,14 +13,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="{% static "style.css" %}">
+    <link rel="stylesheet" href="static/style.css">
     <script src="https://use.fontawesome.com/19e3e8632d.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-<div id="loading" class="preloader">
+<!-- <div id="loading" class="preloader">
     <div class="loader"></div>
-</div>
+</div> -->
 <script src="{% static "preloader.js" %}"></script>
     <!-- HEADER -->
     <div class="ourButton">
@@ -32,7 +31,7 @@
     </div>
 
     <div class="container-fluid col-md-12 col-xs-12 col-lg-12" id="logo">
-        <img src="{% static "Monraz_r_sq.png" %}">
+        <img src="static/Monraz_r_sq.png">
     </div>
     <div id="menu" class="container-fluid">
         <div class="an"><a href="#"><b>TAC-500</b></a></div>
@@ -80,7 +79,7 @@
             </table>
         </div>
         <div id="infoImg" class="col-md-7 col-xs-12">
-            <img src="{% static "dea0fe4404d36d5750524aa91898299c.jpg" %}">
+            <img src="static/dea0fe4404d36d5750524aa91898299c.jpg">
         </div>
 
         <div id="buyNow">
@@ -98,15 +97,15 @@
 
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="{% static "High-Quality-TAC500-220V-400W-Electricity-Power-Riveter-Gun-Riveting-Tool-Electrical-Rivet-Gun-Power-Tool.jpg" %}">
+                    <img src="static/High-Quality-TAC500-220V-400W-Electricity-Power-Riveter-Gun-Riveting-Tool-Electrical-Rivet-Gun-Power-Tool.jpg">
                 </div>
 
                 <div class="item">
-                    <img src="{% static "time-proof-tac-500 (1).jpg" %}">
+                    <img src="static/time-proof-tac-500 (1).jpg">
                 </div>
 
                 <div class="item">
-                    <img src="{% static "time-proof-tac-500.jpg" %}">
+                    <img src="static/time-proof-tac-500.jpg">
                 </div>
             </div>
 
@@ -136,7 +135,7 @@
         </div>
         <div id="jpg1" class="col-md-6 col-xs-12">
 
-            <img src="{% static "tac500pic.jpg" %}">
+            <img src="static/High-Quality-TAC500-220V-400W-Electricity-Power-Riveter-Gun-Riveting-Tool-Electrical-Rivet-Gun-Power-Tool.jpg">
         </div>
     </div>
 
@@ -151,8 +150,6 @@
                 </div>
             </div>
             <form class="buyForm" method="POST">
-                {% csrf_token %}
-                {{ form|as_bootstrap }}
                 <input type="submit" class="btn btn-primary" value="Сделать заказ">
             </form>
         </div>
