@@ -1,0 +1,74 @@
+ /* preloader*/
+    .preloader {
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 11;
+        opacity: 1;
+        transition: 1s all;
+        visibility: visible;
+    }
+
+    .done {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .loader {
+        width: 75px;
+        height: 75px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 10px solid black;
+        border-radius: 50%;
+        border-top-color: #ffff66;
+        transform: translate(-50%, -50%);
+        animation: 2s move infinite linear;
+    }
+
+    @keyframes move {
+        from {
+            transform: translate(-50%, -50%) rotate(0deg)
+        }
+        to {
+            transform: translate(-50%, -50%) rotate(360deg)
+        }
+    }
+
+
+#fullContent{
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    text-align: center;
+}
+
+.btn{
+    background-color: #ffff66;
+    color: black;
+    font-size: 45px;
+    border-radius: 40px;
+    border: none;
+}
+.btn:hover{
+    background-color: #ffff66;
+    color: black;
+}
+.btn:active{
+    border: none;
+}
+
+.control-label{
+    color: white;
+    font-size: 40px;
+}
+#div_id_phone label+div:active{
+    border: none;
+}

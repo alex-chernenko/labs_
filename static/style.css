@@ -1,0 +1,731 @@
+/* MEDIA DEVICES*/
+@media only screen and (max-width: 700px){
+     /*BUTTON*/
+    .ourButton {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+    }
+
+    .pulse {
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+    }
+
+    .text {
+        position: absolute;
+        text-transform: uppercase;
+        bottom: 11px;
+        font-size: 13px;
+        font-weight: 600;
+        transform: scaleX(-1);
+        transition: 0.5s ease-in-out;
+        opacity: 0;
+    }
+    .text a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .pulse:hover .text {
+        transform: scaleX(1);
+        transition: 0.5s ease-in-out;
+        opacity: 1;
+    }
+
+    .pulse:hover i {
+        transition: 0.5s ease-in-out;
+        transform: scale(0);
+    }
+
+    .phone i {
+        transition: 0.5s ease-in-out;
+    }
+
+    .phone {
+        position: relative;
+        font-size: 30px;
+        text-align: center;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        /*animation: phone 0.9s ease-in-out infinite;*/
+    }
+
+    @keyframes phone {
+        0%, 100% {
+            transform: rotate(-10deg);
+        }
+        50% {
+            transform: rotate(10deg);
+        }
+    }
+
+      /* call_form*/
+    #call {
+        position: absolute;
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+    }
+
+    /*NAVBAR*/
+    #logo {
+        background-color: black;
+    }
+
+    #logo img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
+    #menu {
+        height: 50px;
+        background-color: black;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #menu a {
+        color: white;
+    }
+
+    #menu a::before {
+        content: '';
+        width: 20px;
+        height: 3px;
+        background-color: #ffff66;
+        position: absolute;
+        transition: 0.5s all;
+        z-index: 2;
+    }
+
+    #menu a:hover::before {
+        transform: translateX(50%);
+    }
+
+    /*FIRST SECTION*/
+    #info {
+        width: 100%;
+        height: 690px;
+        background-color: white;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #infoBox {
+        height: 80%;
+        order: 1;
+    }
+
+    #infoBox table{
+        margin-top: 5%;
+        width: 100%;
+    }
+    #infoBox table td[class="yellow"]{
+        text-align: center;
+    }
+
+    #infoBox table tr td {
+        color: black;
+        background-color: white;
+    }
+
+    #infoBox table tr td:hover {
+        background-color: #ffff66;
+    }
+
+    #infoImg {
+        order: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        margin-bottom: 2.5%;
+    }
+
+    #infoImg img {
+        margin-top: 5%;
+        width: 70%;
+    }
+
+    #buyNow{
+        order: 2;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+
+    }
+
+    #inside {
+        background-color: black;
+        width: 45%;
+        height: 40px;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    #buyNow a {
+        color: white;
+        font-size: 25px;
+        text-decoration: none;
+    }
+
+    @keyframes buyNowIn {
+        0%, 100% {
+            transform: scale(1)
+        }
+        50% {
+            transform: scale(1.05)
+        }
+    }
+
+    /* SECOND SECTION */
+    #second {
+        width: 100%;
+        height: 400px;
+        color: white;
+        border: none;
+    }
+
+    #myCarousel {
+        width: 100%;
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 5px solid black;
+    }
+
+    #myCarousel a span {
+        color: black;
+        font-size: 50px;
+        font-weight: bold;
+        opacity: 1;
+    }
+
+    #myCarousel a span:hover {
+        color: #ffff66;
+    }
+
+    .carousel-control.left, .carousel-control.right {
+        background-image: none !important;
+        filter: none !important;
+    }
+
+    #pros h1 {
+        margin-left: 10%;
+        font-size: 35px;
+    }
+
+    #content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    #jpg1 img {
+        width: 560px;
+        height: 560px;
+        padding-top: 80px;
+        padding-left: 80px;
+    }
+
+    #content p {
+        color: black;
+        font-size: 38px;
+        margin-left: 16%;
+    }
+
+    .a-1 span {
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-right: 30px;
+        color: white;
+        background-color: black;
+    }
+
+    #pros {
+        width: 100%;
+        height: 600px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    #buy {
+        width: 100%;
+        height: 750px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* preloader*/
+    .preloader {
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 11;
+        opacity: 1;
+        transition: 1s all;
+        visibility: visible;
+    }
+
+    .done {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .loader {
+        width: 75px;
+        height: 75px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 10px solid black;
+        border-radius: 50%;
+        border-top-color: #ffff66;
+        transform: translate(-50%, -50%);
+        animation: 2s move infinite linear;
+    }
+
+    @keyframes move {
+        from {
+            transform: translate(-50%, -50%) rotate(0deg)
+        }
+        to {
+            transform: translate(-50%, -50%) rotate(360deg)
+        }
+    }
+
+    /*FORM*/
+
+    #tac500Form {
+        color: white;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: center;
+    }
+
+    #tac500Form p {
+        font-size: 43px;
+        padding-bottom: 30px;
+        text-decoration: overline;
+        text-decoration-color: #ffff66;
+    }
+
+    .form-group .control-label {
+        font-size: 20px;
+    }
+
+    .form-group input:hover {
+        border: 1.8px solid black;
+    }
+
+    .form-group input:active {
+        border: 1.8px solid black;
+    }
+
+    .btn {
+        background-color: #ffff66;
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+        width: 60%;
+        border: none;
+    }
+}
+
+
+/* COMPUTERS */
+@media screen and (min-width: 701px) {
+    /*BUTTON*/
+    .ourButton {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+    }
+
+    .pulse {
+        width: 90px;
+        height: 90px;
+        text-align: center;
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+    }
+
+    .text {
+        position: absolute;
+        text-transform: uppercase;
+        bottom: 21px;
+        font-size: 15px;
+        font-weight: 600;
+        transform: scaleX(-1);
+        transition: 0.5s ease-in-out;
+        opacity: 0;
+    }
+
+    .text a{
+        text-decoration: none;
+        color: white;
+    }
+    .pulse:hover .text {
+        transform: scaleX(1);
+        transition: 0.5s ease-in-out;
+        opacity: 1;
+    }
+
+    .pulse:hover i {
+        transition: 0.5s ease-in-out;
+        transform: scale(0);
+    }
+
+    .phone i {
+        transition: 0.5s ease-in-out;
+    }
+
+    .phone {
+        position: relative;
+        font-size: 45px;
+        text-align: center;
+        width: 90px;
+        height: 90px;
+        line-height: 94px;
+        /*animation: phone 0.9s ease-in-out infinite;*/
+    }
+
+    @keyframes phone {
+        0%, 100% {
+            transform: rotate(-10deg);
+        }
+        50% {
+            transform: rotate(10deg);
+        }
+    }
+
+    /* call_form*/
+    #call {
+        position: absolute;
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+    }
+
+    /*NAVBAR*/
+    #logo {
+        background-color: black;
+    }
+
+    #logo img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
+    #menu {
+        height: 50px;
+        background-color: black;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #menu a {
+        font-size: 20px;
+        color: white;
+    }
+
+    #menu a::before {
+        content: '';
+        width: 20px;
+        height: 3px;
+        background-color: #ffff66;
+        position: absolute;
+        transition: 0.5s all;
+        z-index: 2;
+    }
+
+    #menu a:hover::before {
+        transform: translateX(50%);
+    }
+
+    /*FIRST SECTION*/
+    #info {
+        width: 100%;
+        height: 690px;
+        background-color: white;
+    }
+
+    #infoBox {
+        height: 80%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    #infoBox table {
+        font-size: 20px;
+        margin-top: 15%;
+        width: 100%;
+        text-align: center;
+    }
+
+    #infoBox table tr td {
+        color: black;
+        background-color: white;
+    }
+
+    #infoBox table tr td:hover {
+        background-color: #ffff66;
+    }
+
+    #infoImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        margin-bottom: 2.5%;
+    }
+
+    #infoImg img {
+        width: 70%;
+    }
+
+    #buyNow {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #inside {
+        background-color: black;
+        width: 15%;
+        height: 60px;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    #inside:hover {
+        animation-name: buyNowIn;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    #buyNow a {
+        color: white;
+        font-size: 40px;
+    }
+
+    #buyNow a {
+        text-decoration: none;
+    }
+
+    #buyNow a:hover {
+        text-decoration: underline;
+        text-decoration-color: #ffff66;
+    }
+
+    @keyframes buyNowIn {
+        0%, 100% {
+            transform: scale(1)
+        }
+        50% {
+            transform: scale(1.05)
+        }
+    }
+
+    /* SECOND SECTION */
+    #second {
+        width: 100%;
+        background-color: black;
+        color: white;
+    }
+
+    #myCarousel {
+        width: 40%;
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 30px solid white;
+    }
+
+    #myCarousel a span {
+        color: black;
+        font-size: 50px;
+        font-weight: bold;
+        opacity: 1;
+    }
+
+    #myCarousel a span:hover {
+        color: #ffff66;
+    }
+
+    .carousel-control.left, .carousel-control.right {
+        background-image: none !important;
+        filter: none !important;
+    }
+
+    #pros h1 {
+        margin-left: 10%;
+        font-size: 35px;
+    }
+
+    #content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    #jpg1 img {
+        width: 560px;
+        height: 560px;
+        padding-top: 80px;
+        padding-left: 80px;
+    }
+
+    #content p {
+        color: black;
+        font-size: 38px;
+        margin-left: 16%;
+    }
+
+    .a-1 span {
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-right: 30px;
+        color: white;
+        background-color: black;
+    }
+
+    #pros {
+        width: 100%;
+        height: 600px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    #buy {
+        width: 100%;
+        height: 600px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* preloader*/
+    .preloader {
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 11;
+        opacity: 1;
+        transition: 1s all;
+        visibility: visible;
+    }
+
+    .done {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .loader {
+        width: 75px;
+        height: 75px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 10px solid black;
+        border-radius: 50%;
+        border-top-color: #ffff66;
+        transform: translate(-50%, -50%);
+        animation: 2s move infinite linear;
+    }
+
+    @keyframes move {
+        from {
+            transform: translate(-50%, -50%) rotate(0deg)
+        }
+        to {
+            transform: translate(-50%, -50%) rotate(360deg)
+        }
+    }
+
+    /*FORM*/
+    .col-md-12 .form-group input {
+        width: 50%;
+    }
+
+    #tac500Form {
+        color: white;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: center;
+    }
+
+    #tac500Form p {
+        font-size: 43px;
+        padding-bottom: 30px;
+        text-decoration: overline;
+        text-decoration-color: #ffff66;
+    }
+
+    .form-group .control-label {
+        font-size: 20px;
+    }
+
+    .form-group input:hover {
+        border: 3px solid black;
+    }
+
+    .form-group input:active {
+        border: 3px solid black;
+    }
+
+    .btn {
+        background-color: #ffff66;
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+        width: 30%;
+        border: none;
+    }
+
+    .btn:hover {
+        background-color: #ffff66;
+        color: black;
+    }
+}
+
+
+
+
